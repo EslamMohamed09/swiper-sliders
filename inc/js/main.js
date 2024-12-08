@@ -1,4 +1,4 @@
-var swiper1 = new Swiper(".swiper1", {
+var swiper1 = new Swiper(".swiper-section1 .swiper1-container", {
   effect:"coverflow",
   grabCursor:true,
   centeredSlides:true,
@@ -24,7 +24,7 @@ var swiper1 = new Swiper(".swiper1", {
   },
 });
 
-var swiper2 = new Swiper(".swiper2", {
+var swiper2 = new Swiper(".swiper-section2 .swiper2-container", {
     effect:"coverflow",
     grabCursor:true,
     centeredSlides:true,
@@ -48,4 +48,30 @@ var swiper2 = new Swiper(".swiper2", {
         el:".swiper-pagination",
         clickable:true,
     },
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper3 = new Swiper('.swiper3', {
+    effect: 'cube', // Set cube effect
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+    loop: true, // Enable loop
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+    },
+  });
 });
