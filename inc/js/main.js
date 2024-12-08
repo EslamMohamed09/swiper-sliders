@@ -18,7 +18,7 @@ var swiper1 = new Swiper(".swiper-section1 .swiper1-container", {
         swiper1.slideTo(This.clickedIndex);
     },
   },
-  pagination: {
+  pagination:{
       el:".swiper-pagination",
       clickable:true,
   },
@@ -44,7 +44,7 @@ var swiper2 = new Swiper(".swiper-section2 .swiper2-container", {
           swiper2.slideTo(this.clickedIndex);
       },
     },
-    pagination: {
+    pagination:{
         el:".swiper-pagination",
         clickable:true,
     },
@@ -52,17 +52,17 @@ var swiper2 = new Swiper(".swiper-section2 .swiper2-container", {
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper3 = new Swiper('.swiper3', {
-    effect: 'cube', // Set cube effect
+    effect: 'cube',
     grabCursor: true,
     cubeEffect: {
-      shadow: true,
-      slideShadows: true,
+      shadow: false, // Disable shadow for cleaner slides
+      slideShadows: false, // Disable shadows
       shadowOffset: 20,
       shadowScale: 0.94,
     },
-    loop: true, // Enable loop
+    loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -75,3 +75,4 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 });
+
