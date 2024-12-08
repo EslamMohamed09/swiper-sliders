@@ -42,5 +42,6 @@ var swiper2 = new Swiper(".swiper2", {
     },
     pagination: {
         el:".swiper-pagination",
+        clickable:true,
     },
 });

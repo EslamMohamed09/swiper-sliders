@@ -700,7 +700,7 @@ h5 {
 *************/
 .swiper-section2 .swiper2 {
   width: 40%;
-  padding: 3rem 0;
+  padding: 5rem 0;
   margin: auto;
   background-color: var(--aqua7);
 }
@@ -759,20 +759,17 @@ h5 {
     width: 13rem;
   }
 }
-
-.swiper-pagination {
-  --swiper-pagination-bottom:-6px;
+.swiper-section2 .swiper-pagination {
+  --swiper-pagination-bottom:0;
 }
-
-.swiper-pagination-bullet {
+.swiper-section2 .swiper-pagination-bullet {
   width: 1rem;
   height: 1rem;
-  background-color: var(--white);
+  background-color: var(--gray8);
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
-
-.swiper-pagination-bullet-active {
+.swiper-section2 .swiper-pagination-bullet-active {
   width: 2rem;
   background-color: var(--shin-blue4);
   border-radius: 0.9rem;
