@@ -18,6 +18,10 @@ var swiper1 = new Swiper(".swiper1", {
         swiper1.slideTo(This.clickedIndex);
     },
   },
+  pagination: {
+      el:".swiper-pagination",
+      clickable:true,
+  },
 });
 
 var swiper2 = new Swiper(".swiper2", {

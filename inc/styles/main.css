@@ -636,7 +636,7 @@ h5 {
 *************/
 .swiper-section1 .swiper1 {
   width: 40%;
-  padding: 3rem 0;
+  padding: 5rem 0;
   margin: auto;
   background-color: var(--aqua7);
 }
@@ -693,6 +693,21 @@ h5 {
   .swiper-section1 .swiper-slide {
     width: 13rem;
   }
+}
+.swiper-section1 .swiper-pagination {
+  --swiper-pagination-bottom:0;
+}
+.swiper-section1 .swiper-pagination .swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--gray8);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.swiper-section1 .swiper-pagination .swiper-pagination-bullet-active {
+  width: 2rem;
+  background-color: var(--shin-blue4);
+  border-radius: 0.9rem;
 }
 
 /************
@@ -762,14 +777,14 @@ h5 {
 .swiper-section2 .swiper-pagination {
   --swiper-pagination-bottom:0;
 }
-.swiper-section2 .swiper-pagination-bullet {
+.swiper-section2 .swiper-pagination .swiper-pagination-bullet {
   width: 1rem;
   height: 1rem;
   background-color: var(--gray8);
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
-.swiper-section2 .swiper-pagination-bullet-active {
+.swiper-section2 .swiper-pagination .swiper-pagination-bullet-active {
   width: 2rem;
   background-color: var(--shin-blue4);
   border-radius: 0.9rem;
