@@ -962,3 +962,55 @@ h5 {font-size:1.1rem;}
                                                 border-radius:0.8rem;}
      }
 }
+
+/************
+ # swiper5
+*************/
+.swiper-section5 {overflow:hidden;
+
+       .swiper5-container {position:relative;
+                           height:100vh;}
+
+       .text-swiper5-container {position:absolute;
+                                left:0;
+                                top:0;
+                                width:100%;
+                                clip-path:polygon(39.5% 0, 0 0, 0 100%, 69.5% 100%);
+                                background:rgb(29, 26, 38);
+                                font-family:"Quicksand", sans-serif;
+              .text-slide {display:flex;
+                           flex-direction:column;
+                           justify-content:center;
+                           align-items:center;
+                           transition:all 0.3s linear;
+                     h1,
+                     p {padding:6px;
+                        width:40%;
+                        color:#cfc9dc;
+                        background:rgb(29,25,39,0,0.8);
+                        user-select:none;}
+
+                     h1 {font-size:clamp(2.3rem, 3vm, 4rem);
+                         margin:0 55% 0 10%;
+                         background-image:linear-gradient(15deg, var(--blue), var(--violet9), var(--red10), var(--orange9));
+                     }
+              }
+       }
+
+       .image-swiper5-container {position:absolute;
+                                 right:0;
+                                 top:0;
+                                 width:60%;
+                                 clip-path:polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+              .img-slide {
+                     img {position:relative;
+                          display:block;
+                          width:100%;
+                          height:100%;
+                          object-fit:cover;
+                          object-position:40% 50%;
+                          filter:brightness(1);}
+                     .overlay {}
+              }
+       }
+}
