@@ -1131,9 +1131,13 @@ h5 {
 /************
  # swiper5
 *************/
+.swiper-section5 {
+  position: relative !important;
+}
 .swiper-section5 .swiper5-container {
-  height: 50rem;
+  height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .swiper-section5 .text-swiper5-container {
   position: absolute;

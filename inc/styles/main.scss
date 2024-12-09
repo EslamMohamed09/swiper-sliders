@@ -966,10 +966,11 @@ h5 {font-size:1.1rem;}
 /************
  # swiper5
 *************/
-.swiper-section5 {
+.swiper-section5 {position:relative !important;
 
-       .swiper5-container {height:50rem;
-                           position:relative;}
+       .swiper5-container {height:100vh;
+                           position:relative;
+                           overflow:hidden;}
 
        .text-swiper5-container {position:absolute;
                                 left:0;
