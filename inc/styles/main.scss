@@ -993,7 +993,12 @@ h5 {font-size:1.1rem;}
                      h1 {font-size:clamp(2.3rem, 3vm, 4rem);
                          margin:0 55% 0 10%;
                          background-image:linear-gradient(15deg, var(--blue), var(--violet9), var(--red10), var(--orange9));
-                     }
+                         -webkit-text-fil-color:transparent;
+                         background-clip:text;}
+
+                     p {font-size:clamp(1rem, 2vm, 1.4rem);
+                        margin:15px 55% 0 10%;
+                        line-height:1.6;}
               }
        }
 
