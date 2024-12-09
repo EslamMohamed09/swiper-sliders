@@ -992,5 +992,79 @@ h5 {
 /************
  # swiper4
 *************/
+.swiper-section4 .swiper2-container {
+  margin: 3rem 0;
+  padding-bottom: 4rem;
+  user-select: none;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .swiper-slide {
+  position: relative;
+  height: 500px;
+  border-radius: 2rem;
+  overflow: hidden;
+  filter: grayscale(20%) brightness(80%);
+  pointer-events: none;
+  will-change: transform;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .swiper-slide-active {
+  perspective: 1000px;
+  filter: grayscale(0) brightness(100%);
+  pointer-events: auto;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .swiper-slide-active .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .flipped .card {
+  transform: rotateY(180deg);
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .front,
+.swiper-section4 .swiper2-container .swiper-wrapper .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .front::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle closest-side, var(--blue5) 3px, transparent 3px);
+  background-size: 8px 8px;
+  transition: opacity 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 0.3;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .swiper-slide-active .front::before {
+  opacity: 0;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .back {
+  opacity: 0;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .back::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(35, 35, 39, 0.7);
+  border-radius: inherit;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  mix-blend-mode: darken;
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .swiper-slide-active .back {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+.swiper-section4 .swiper2-container .swiper-wrapper .swiper-slide-active .back p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*# sourceMappingURL=main.css.map */
