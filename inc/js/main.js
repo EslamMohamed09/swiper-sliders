@@ -78,23 +78,59 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// const swiper3 = new Swiper('.swiper3', {
-//   speed:1000,
-//   loop:true,
-//   grabCursor:true,
-//   effect:"creative",
-//   creativeEffect:{
-//     prev:{
-//       shadow:true,
-//       translate:["-120%", 0, -500],
-//     },
-//     next:{
-//       shadow:true,
-//       translate:["120%", 0, -500],
-//     },
-//   },
-//   autoplay:{
-//     delay:4000,
-//     reverseDirection:false,
-//   },
-// });
+const swiper4 = new Swiper(".swiper4-container", {
+  initialSlide:3,
+  centeredSlides:true,
+  loop:true,
+  speed:900,
+  grabCcrsor:true,
+  allowTochMove:false,
+  effect:"coverflow",
+  coverflowEffect: {
+    rotate:-10,
+    stretch:-45,
+    depth:90,
+    modifier:1,
+    slideShadows:true,
+  },
+  mousewheel: {
+    thresholdDelta:50,
+    sensitivity:1,
+  },
+  pagination: {
+    el:".swiper-pagination",
+    clickable:true,
+  }, 
+  breakpoints:{
+    0:{slidesPerView:1,
+       spaceBetweem:20,
+    },
+    600: {slidesPerView:3},
+    1200: {slidesPerView:5,},
+  },
+});
+
+
+function flipActiveSlide(slidesElement, activeSlideElement){
+  const slides = document.querySelectorAll(slidesElement);
+  const activeSlide = document.querySelector(activeSlideElement);
+  const button = activeSlide.querySelector("button");
+
+  if(button){
+    button.addEventListener("click", (event)=>{
+      event.stopPropagation();
+      activeSlide.classList.add("flipped");
+    });
+  }
+
+  slides.forEach((slide) => {
+    slide.addEventListener("click", function(){
+      if(slide.classList.contains("flipped")){
+         slide.classList.remove("flipped");
+      }
+    });
+  });
+
+}
+
+flipActiveSlide(".swiper4-container .swiper-slide", ".swiper4-container .swiper-slide-active");
