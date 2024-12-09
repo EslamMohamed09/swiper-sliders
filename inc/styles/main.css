@@ -848,14 +848,15 @@ h5 {
   width: 100%;
   margin: auto;
   padding: 0;
+  gap: 1rem;
 }
 .about-section .about-container .left-block .context h2 {
   font-family: "Unbounded", sans-serif;
-  font-size: clamp(2.2rem, 4vw, 5rem);
+  font-size: clamp(1.5rem, 3vw, 4rem);
   font-weight: 600;
   line-height: 1.1;
   color: var(--white);
-  text-shadow: 0 0 10px #bb33ff, 0 0 20px #0d00ff;
+  text-shadow: 0 0 5px #bb33ff, 0 0 10px #0d00ff;
   text-transform: uppercase;
   animation: waving 1.7s linear 3;
   animation-delay: calc(0.1s * var(--i));
@@ -907,7 +908,8 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0e0f30;
+  background: none;
+  border: none;
 }
 .about-section .about-container .right-block .swiper3 .swiper-slide img {
   width: 100%;
@@ -963,11 +965,6 @@ h5 {
   .about-section .swiper3 {
     grid-area: slider;
     margin-bottom: 20px;
-  }
-  .about-section .title,
-  .about-section p,
-  .about-section button {
-    margin: 20px auto;
   }
 }
 @media (max-width: 768px) {
