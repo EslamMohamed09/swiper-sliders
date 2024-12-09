@@ -966,10 +966,10 @@ h5 {font-size:1.1rem;}
 /************
  # swiper5
 *************/
-.swiper-section5 {overflow:hidden;
+.swiper-section5 {
 
-       .swiper5-container {position:relative;
-                           height:100vh;}
+       .swiper5-container {height:50rem;
+                           position:relative;}
 
        .text-swiper5-container {position:absolute;
                                 left:0;
@@ -987,7 +987,7 @@ h5 {font-size:1.1rem;}
                      p {padding:6px;
                         width:40%;
                         color:#cfc9dc;
-                        background:rgb(29,25,39,0,0.8);
+                        background:rgb(29,25,39,0.8);
                         user-select:none;}
 
                      h1 {font-size:clamp(2.3rem, 3vm, 4rem);
@@ -1029,21 +1029,21 @@ h5 {font-size:1.1rem;}
 
        .swiper-button-prev,
        .swiper-button-next {--swiper-navigation-size:25px;
-                            --swiper-navigation-color:rgb(255, 255, 255, 0.5);
-                            font-weight:800;
-                            padding:1.5rem;
-                            border-radius:50%;
-                            background-color:transparent;
-                            background-image:radial-gradient(
-                                50% 115% at 50% -5%,
-                                rgba(255, 255, 255, 0.11) 0%,
-                                transparent 100%
-                            );
-                            box-shadow:inset 0 0 10px 0 rgba(255, 255, 255, 0.14), 
-                                       inset 0 5px 10px 0 rgba(255, 255, 255, 0.11),
-                                       inset 0 2px 5px 0 rgba(255, 255, 255, 0.4),
-                                       inset 0 3px 20px 0 rgba(0, 0, 0, 0.25);
-                            transition:all 0.2s ease-in;
+                             --swiper-navigation-color:rgb(255, 255, 255, 0.5);
+                             font-weight:800;
+                             padding:1.5rem;
+                             border-radius:50%;
+                             background-color:transparent;
+                             background-image:radial-gradient(
+                                 50% 115% at 50% -5%,
+                                 rgba(255, 255, 255, 0.11) 0%,
+                                 transparent 100%
+                             );
+                             box-shadow:inset 0 0 10px 0 rgba(255, 255, 255, 0.14), 
+                                        inset 0 5px 10px 0 rgba(255, 255, 255, 0.11),
+                                        inset 0 2px 5px 0 rgba(255, 255, 255, 0.4),
+                                        inset 0 3px 20px 0 rgba(0, 0, 0, 0.25);
+                             transition:all 0.2s ease-in;
               &:hover {transform:scale(1.08);
                        --swiper-navigation-color:rgb(255, 255, 255);}
        }
