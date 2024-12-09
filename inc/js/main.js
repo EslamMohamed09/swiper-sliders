@@ -134,3 +134,24 @@ function flipActiveSlide(slidesElement, activeSlideElement){
 }
 
 flipActiveSlide(".swiper4-container .swiper-slide", ".swiper4-container .swiper-slide-active");
+
+const swiper5TextSlider = new Swiper(".swiper-section5 .text-swiper5-container", {
+  effect: "slide",
+  direction:"vertical",
+  speed:1000,
+  longSwipesRatio:0.01,
+  grabcursor:true,
+  watchSlidesProgress:true,
+  mousewheel:true,
+  navigation:{
+    nextEl:".swiper-button-next",
+    prevEl:".swiperbutton-prev",
+  },
+});
+
+const swiper5ImageSlider = new Swiper(".image-swiper5-container", {
+  effect:"fade",
+  allowTouchMove:false,
+});
+
+swiper5TextSlider.controller.control = imageSlider;
