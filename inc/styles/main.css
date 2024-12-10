@@ -1259,4 +1259,73 @@ h5 {
   }
 }
 
+/************
+ # swiper6
+*************/
+.swiper-sectin6 {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 37, 40);
+  position: relative;
+}
+.swiper-sectin6 svg {
+  width: 0;
+  height: 0;
+}
+.swiper-sectin6 h1 {
+  font-family: "cinzel", serif;
+  color: rgb(161, 161, 161);
+  font-size: clamp(3rem, 4vw, 5rem);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.swiper-sectin6 .swipe6-container {
+  padding: 5rem 0;
+}
+.swiper-sectin6 .swipe6-container .swiper-slide {
+  position: relative;
+  width: 260px;
+  height: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+  filter: grayscale(70%);
+  transition: all 0.6s;
+  user-select: none;
+}
+.swiper-sectin6 .swipe6-container .swiper-slide:nth-child(2) {
+  transform: rotate(-7deg);
+}
+.swiper-sectin6 .swipe6-container .swiper-slide:nth-child(3) {
+  transform: rotate(7deg);
+}
+.swiper-sectin6 .swipe6-container .swiper-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 250px;
+  height: 290px;
+  border: 1.5rem solid var(--white);
+  filter: url(#mask);
+  z-index: 1;
+}
+.swiper-sectin6 .swipe6-container .swiper-slide img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transform: translate(5%, 5%);
+}
+.swiper-sectin6 .swipe6-container .swiper-slide-active {
+  filter: grayscale(10%);
+  margin: 0 5rem;
+}
+.swiper-sectin6 .swipe6-container .swiper-slide-active:nth-child(2), .swiper-sectin6 .swipe6-container .swiper-slide-active:nth-child(3) {
+  transform: rotate(0) scale(1.35);
+  z-index: 2;
+}
+
 /*# sourceMappingURL=main.css.map */
