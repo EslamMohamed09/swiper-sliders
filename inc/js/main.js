@@ -136,26 +136,57 @@ function flipActiveSlide(slidesElement, activeSlideElement){
 flipActiveSlide(".swiper4-container .swiper-slide", ".swiper4-container .swiper-slide-active");
 
 
-  const swiper5TextSlider = new Swiper(".text-swiper5-container", {
-    effect:"slide",
-    direction:"vertical",
-    speed:1000,
-    longSwipesRatio:0.01,
-    grabCursor:true,
-    mousewheel:{
-      releaseOnEdges:true,
-      forceToAxis:true,
-    },
-    navigation:{
-      prevEl:".swiper-button-prev",
-      nextEl:".swiper-button-next",
-    },
-  });
+const swiper5 = new Swiper(".swiper5-container", {
+  grabCursor:true,
+  initialSlide:4,
+  centeredSlides:true,
+  slidesPerView:"auto",
+  spaceBetween:0,
+  slideToClickedSlide:true,
+  mousewheel:{
+    invert:false,
+    thresholdDelta:50,
+    sensitivity:0.8,
+  },
+});
+
+const swiperWrapper5 = document.querySelector(".swiper5-container .swiper-wrapper");
+if (swiperWrapper5){
+    swiperWrapper5.style.marginLeft = "70px";
+}
+
+// setTimeout(() => {
+  
+// });
 
 
-const swiper5ImageSlider = new Swiper(".image-swiper5-container", {
+
+
+
+
+
+
+const textContainerBanner = new Swiper(".banner-section .text-block", {
+  effect:"slide",
+  direction:"vertical",
+  speed:1000,
+  longSwipesRatio:0.01,
+  grabCursor:true,
+  mousewheel:{
+    releaseOnEdges:true,
+    forceToAxis:true,
+  },
+  navigation:{
+    prevEl:".banner-section .swiper-button-prev",
+    nextEl:".banner-section .swiper-button-next",
+  },
+});
+
+
+const imageContainerBanner = new Swiper(".banner-section .image-block", {
   effect:"fade",
   allowTouchMove:false,
 });
 
-swiper5TextSlider.controller.control = swiper5ImageSlider;
+textContainerBanner.controller.control = imageContainerBanner;
+imageContainerBanner.controller.control = textContainerBanner;
