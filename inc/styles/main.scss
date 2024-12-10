@@ -966,40 +966,48 @@ h5 {font-size:1.1rem;}
 /************
  # swiper5
 *************/
-.swiper-section5 {position:relative !important;
+.swiper-section5 {padding:0;
+                  margin:0;
+                  position:relative !important;
 
        .swiper5-container {height:100vh;
-                           position:relative;
                            overflow:hidden;}
 
        .text-swiper5-container {position:absolute;
                                 left:0;
                                 top:0;
                                 width:100%;
-                                clip-path:polygon(39.5% 0, 0 0, 0 100%, 69.5% 100%);
+                                clip-path:polygon(39.5% 0, 0 0, 0 100%, 63.5% 100%);
                                 background:rgb(29, 26, 38);
                                 font-family:"Quicksand", sans-serif;
               .text-slide {display:flex;
                            flex-direction:column;
                            justify-content:center;
-                           align-items:center;
+                           align-items:flex-start;
                            transition:all 0.3s linear;
-                     h1,
-                     p {padding:6px;
-                        width:40%;
-                        color:#cfc9dc;
-                        background:rgb(29,25,39,0.8);
-                        user-select:none;}
 
-                     h1 {font-size:clamp(2.3rem, 3vm, 4rem);
-                         margin:0 55% 0 10%;
-                         background-image:linear-gradient(15deg, var(--blue), var(--violet9), var(--red10), var(--orange9));
-                         -webkit-text-fil-color:transparent;
-                         background-clip:text;}
-
-                     p {font-size:clamp(1rem, 2vm, 1.4rem);
-                        margin:15px 55% 0 10%;
-                        line-height:1.6;}
+                     .content {display:flex;
+                               flex-direction:column;
+                               justify-content:center;
+                               align-items:flex-start;
+                               gap:1rem;
+                               width:30%;
+                               padding:0.3rem;
+                               margin:1rem 0 0 7%;
+                            h1,
+                            p {color:#cfc9dc;
+                               user-select:none;}
+       
+                            h1 {font-size:clamp(2.3rem, 4vm, 5rem);
+                                font-weight:bold;
+                                background-image:linear-gradient(15deg, var(--violet10) 0%, var(--violet8) 15%, var(--orange-red1) 25%, var(--shin-orange) 70%);
+                                -webkit-text-fill-color:transparent;
+                                background-clip:text;}
+       
+                            p {font-size:1.1rem;
+                               letter-spacing:1px;
+                               line-height:1.6;}
+                     }
               }
        }
 
@@ -1007,7 +1015,7 @@ h5 {font-size:1.1rem;}
                                  right:0;
                                  top:0;
                                  width:60%;
-                                 clip-path:polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+                                 clip-path:polygon(0 0, 100% 0, 100% 100%, 44% 110%);
               .img-slide {
                      img {position:relative;
                           display:block;
@@ -1021,8 +1029,8 @@ h5 {font-size:1.1rem;}
 
                      .overlay {position:absolute;
                                inset:0;
-                               height:100%;
                                width:100%;
+                               height:100%;
                                background-color:rgba(41, 33, 67, 0.2);}
 
               }
@@ -1034,18 +1042,40 @@ h5 {font-size:1.1rem;}
                              font-weight:800;
                              padding:1.5rem;
                              border-radius:50%;
+                             border:2px solid var(--blue2);
                              background-color:transparent;
                              background-image:radial-gradient(
                                  50% 115% at 50% -5%,
-                                 rgba(255, 255, 255, 0.11) 0%,
+                                 rgba(7, 89, 136, 0.247) 0%,
                                  transparent 100%
                              );
-                             box-shadow:inset 0 0 10px 0 rgba(255, 255, 255, 0.14), 
-                                        inset 0 5px 10px 0 rgba(255, 255, 255, 0.11),
-                                        inset 0 2px 5px 0 rgba(255, 255, 255, 0.4),
-                                        inset 0 3px 20px 0 rgba(0, 0, 0, 0.25);
+                             box-shadow:inset 0 0 10px 0 rgba(1, 81, 105, 0.767), 
+                                        inset 0 5px 10px 0 rgba(2, 128, 145, 0.438),
+                                        inset 0 2px 5px 0 rgba(3, 90, 131, 0.541),
+                                        inset 0 3px 20px 0 rgba(2, 106, 124, 0.575);
                              transition:all 0.2s ease-in;
+              &::after {font-size:1.4rem;
+                        color:var(--white);}
               &:hover {transform:scale(1.08);
                        --swiper-navigation-color:rgb(255, 255, 255);}
+       }
+
+       @media(max-width:768px){
+              height:100vh;
+
+              .text-swiper5-container {height:53vh;
+                                       top:auto !important;
+                                       bottom:0;
+                                       clip-path:polygon(0 0, 100% 26%, 100% 100%, 0 100%);}
+
+              .image-swiper5-container {height:60vh;
+                                        width:100%;
+                                        clip-path:polygon(0 0, 100% 0, 100% 100%, 0 77%);}
+
+              .content {width:65% !important;}
+
+              .swiper-button-prev {top:4.5rem;}
+              .swiper-button-next {top:auto;
+                                   bottom:1.8rem;}
        }
 }

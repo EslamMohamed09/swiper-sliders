@@ -86,18 +86,18 @@ const swiper4 = new Swiper(".swiper4-container", {
   grabCcrsor:true,
   allowTochMove:false,
   effect:"coverflow",
-  coverflowEffect: {
+  coverflowEffect:{
     rotate:-10,
     stretch:-45,
     depth:90,
     modifier:1,
     slideShadows:true,
   },
-  mousewheel: {
+  mousewheel:{
     thresholdDelta:50,
     sensitivity:1,
   },
-  pagination: {
+  pagination:{
     el:".swiper-pagination",
     clickable:true,
   }, 
@@ -105,8 +105,8 @@ const swiper4 = new Swiper(".swiper4-container", {
     0:{slidesPerView:1,
        spaceBetweem:20,
     },
-    600: {slidesPerView:3},
-    1200: {slidesPerView:5,},
+    600:{slidesPerView:3},
+    1200:{slidesPerView:5,},
   },
 });
 
@@ -137,18 +137,18 @@ flipActiveSlide(".swiper4-container .swiper-slide", ".swiper4-container .swiper-
 
 
   const swiper5TextSlider = new Swiper(".text-swiper5-container", {
-    effect: "slide",
-    direction: "vertical",
-    speed: 1000,
-    longSwipesRatio: 0.01,
-    grabCursor: true,
-    mousewheel: {
-      releaseOnEdges: true,
-      forceToAxis: true,
+    effect:"slide",
+    direction:"vertical",
+    speed:1000,
+    longSwipesRatio:0.01,
+    grabCursor:true,
+    mousewheel:{
+      releaseOnEdges:true,
+      forceToAxis:true,
     },
-    navigation: {
-      prevEl: ".swiper-button-prev",
-      nextEl: ".swiper-button-next",
+    navigation:{
+      prevEl:".swiper-button-prev",
+      nextEl:".swiper-button-next",
     },
   });
 
