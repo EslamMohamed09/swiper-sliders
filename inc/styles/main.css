@@ -1214,7 +1214,7 @@ h5 {
   --swiper-navigation-size:25px;
   --swiper-navigation-color:rgb(255, 255, 255, 0.5);
   font-weight: 800;
-  padding: 1.5rem;
+  padding: 1.3rem;
   border-radius: 50%;
   border: 2px solid var(--blue2);
   background-color: transparent;
@@ -1224,7 +1224,7 @@ h5 {
 }
 .swiper-section5 .swiper-button-prev::after,
 .swiper-section5 .swiper-button-next::after {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--white);
 }
 .swiper-section5 .swiper-button-prev:hover,

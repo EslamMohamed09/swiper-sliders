@@ -1040,7 +1040,7 @@ h5 {font-size:1.1rem;}
        .swiper-button-next {--swiper-navigation-size:25px;
                              --swiper-navigation-color:rgb(255, 255, 255, 0.5);
                              font-weight:800;
-                             padding:1.5rem;
+                             padding:1.3rem;
                              border-radius:50%;
                              border:2px solid var(--blue2);
                              background-color:transparent;
@@ -1054,7 +1054,7 @@ h5 {font-size:1.1rem;}
                                         inset 0 2px 5px 0 rgba(3, 90, 131, 0.541),
                                         inset 0 3px 20px 0 rgba(2, 106, 124, 0.575);
                              transition:all 0.2s ease-in;
-              &::after {font-size:1.4rem;
+              &::after {font-size:1.3rem;
                         color:var(--white);}
               &:hover {transform:scale(1.08);
                        --swiper-navigation-color:rgb(255, 255, 255);}
