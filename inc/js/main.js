@@ -1,4 +1,4 @@
-var swiper1 = new Swiper(".swiper-section1 .swiper1-container", {
+var swiper1 = new Swiper(".section1 .swiper1-container", {
   effect:"coverflow",
   grabCursor:true,
   centeredSlides:true,
@@ -24,7 +24,7 @@ var swiper1 = new Swiper(".swiper-section1 .swiper1-container", {
   },
 });
 
-var swiper2 = new Swiper(".swiper-section2 .swiper2-container", {
+var swiper2 = new Swiper(".section2 .swiper2-container", {
     effect:"coverflow",
     grabCursor:true,
     centeredSlides:true,
@@ -160,13 +160,7 @@ if (swiperWrapper5){
 // });
 
 
-
-
-
-
-
-
-const textContainerBanner = new Swiper(".banner-section .text-block", {
+const textSliderBlock = new Swiper(".section6 .text-block", {
   effect:"slide",
   direction:"vertical",
   speed:1000,
@@ -177,13 +171,41 @@ const textContainerBanner = new Swiper(".banner-section .text-block", {
     forceToAxis:true,
   },
   navigation:{
-    prevEl:".banner-section .swiper-button-prev",
-    nextEl:".banner-section .swiper-button-next",
+    prevEl:".swiper-button-prev",
+    nextEl:".swiper-button-next",
   },
 });
 
 
-const imageContainerBanner = new Swiper(".banner-section .image-block", {
+const imageSliderBlock = new Swiper(".section6 .image-block", {
+  effect:"fade",
+  allowTouchMove:false,
+});
+
+textSliderBlock.controller.control = imageSliderBlock;
+
+
+
+
+
+const textContainerBanner = new Swiper(".section7 .text-block", {
+  effect:"slide",
+  direction:"vertical",
+  speed:1000,
+  longSwipesRatio:0.01,
+  grabCursor:true,
+  mousewheel:{
+    releaseOnEdges:true,
+    forceToAxis:true,
+  },
+  navigation:{
+    prevEl:".section7 .swiper-button-prev",
+    nextEl:".section7 .swiper-button-next",
+  },
+});
+
+
+const imageContainerBanner = new Swiper(".section7 .image-block", {
   effect:"fade",
   allowTouchMove:false,
 });
