@@ -230,3 +230,5 @@ const imageContainerBanner = new Swiper(".section7 .image-block", {
 
 textContainerBanner.controller.control = imageContainerBanner;
 imageContainerBanner.controller.control = textContainerBanner;
+
+
