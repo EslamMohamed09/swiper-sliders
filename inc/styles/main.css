@@ -1493,7 +1493,7 @@ h5 {
 }
 .section8 .content .info button {
   display: block;
-  padding: 1rem auto;
+  padding: 0.5rem 2rem;
   margin: 1rem auto;
   font-size: 1.1rem;
   font-weight: 700;
@@ -1535,34 +1535,34 @@ h5 {
   position: relative;
 }
 .section8 .content .swiper .swiper-slide:first-child {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/1.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/1.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(2) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/2.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/2.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(3) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/3.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/3.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(4) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/4.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/4.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(5) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/5.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/5.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(6) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/6.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/6.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(7) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/7.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/7.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(8) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/8.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/8.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(9) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/9.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/9.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide:nth-child(10) {
-  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0) url("../images/3d_design/10.jpg") no-repeat) 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, rgba(32, 58, 67, 0), rgba(44, 243, 100, 0)), url("../images/3d_design/10.jpg") no-repeat 50% 50%/cover;
 }
 .section8 .content .swiper .swiper-slide span {
   position: absolute;
@@ -1606,7 +1606,7 @@ h5 {
   height: 1.5rem;
   background-color: #ff3cac;
   background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
-  animation: animate_n8 25s linear infinite;
+  animation: animaten8 25s linear infinite;
   bottom: -150px;
 }
 .section8 .circle li:first-child {
@@ -1674,7 +1674,7 @@ h5 {
   animation-delay: 0;
   animation-duration: 11s;
 }
-@keyframes animate_n8 {
+@keyframes animaten8 {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
