@@ -976,11 +976,11 @@ h5 {font-size:1.1rem;}
                              width:260px;
                              height:300px;
                              border-radius:1rem;
+                             margin:0 2rem;
                              overflow:hidden;
-                             margin:1rem;
                              filter:grayscale(70%);
-                             transition:all 0.6s;
                              user-select:none;
+                             transition:all 0.6s;
 
                      &:nth-child(2) {transform:rotate(-7deg);}
                      &:nth-child(3) {transform:rotate(7deg);}
@@ -1011,9 +1011,10 @@ h5 {font-size:1.1rem;}
               }
 
               .swiper-slide-active {filter:grayscale(10%);
-                                    margin:0 5rem;
+                                    transform:rotate(0) scale(1.05);
+                                    
                      &:nth-child(2), 
-                     &:nth-child(3) {transform:rotate(0) scale(1.35);
+                     &:nth-child(3) {transform:rotate(0);
                                      z-index:2;}
               }
        }

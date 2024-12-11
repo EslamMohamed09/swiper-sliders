@@ -83,7 +83,7 @@ const swiper4 = new Swiper(".swiper4-container", {
   centeredSlides:true,
   loop:true,
   speed:900,
-  grabCcrsor:true,
+  grabCursor:true,
   allowTochMove:false,
   effect:"coverflow",
   coverflowEffect:{
@@ -137,27 +137,47 @@ flipActiveSlide(".swiper4-container .swiper-slide", ".swiper4-container .swiper-
 
 
 const swiper5 = new Swiper(".swiper5-container", {
-  grabCursor:true,
+  effect:"slide",
+  direction:"horizontal",
+  longSwipesRatio:0.01,
   initialSlide:4,
+  grabCursor:true,
+  loop:false,
+  speed:900,
   centeredSlides:true,
   slidesPerView:"auto",
   spaceBetween:0,
-  slideToClickedSlide:true,
+  slideToClickedSlide:false,
+  freeMode:true,
+  freeModeMomentum:true,
   mousewheel:{
+    forceToAxis:true,
     invert:false,
-    thresholdDelta:50,
+    thresholdDelta:20,
     sensitivity:0.8,
+    releaseOnEdges:true,
   },
 });
 
-const swiperWrapper5 = document.querySelector(".swiper5-container .swiper-wrapper");
-if (swiperWrapper5){
-    swiperWrapper5.style.marginLeft = "70px";
-}
-
-// setTimeout(() => {
-  
-// });
+setTimeout(() => {
+  const swiper5 = new Swiper(".swiper5-container", {
+    grabCursor:true,
+    initialSlide:4,
+    centeredSlides:true,
+    slidesPerView:"auto",
+    spaceBetween:0,
+    slideToClickedSlide:true,
+    mousewheel:{
+      invert:false,
+      thresholdDelta:50,
+      sensitivity:0.8,
+    },
+    autoplay:{
+      delay:2000,
+      pauseOnMouseEnter:true,
+    },
+  });
+}, 100);
 
 
 const textSliderBlock = new Swiper(".section6 .text-block", {
@@ -183,8 +203,6 @@ const imageSliderBlock = new Swiper(".section6 .image-block", {
 });
 
 textSliderBlock.controller.control = imageSliderBlock;
-
-
 
 
 

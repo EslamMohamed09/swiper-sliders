@@ -1149,11 +1149,11 @@ h5 {
   width: 260px;
   height: 300px;
   border-radius: 1rem;
+  margin: 0 2rem;
   overflow: hidden;
-  margin: 1rem;
   filter: grayscale(70%);
-  transition: all 0.6s;
   user-select: none;
+  transition: all 0.6s;
 }
 .section5 .swiper5-container .swiper-slide:nth-child(2) {
   transform: rotate(-7deg);
@@ -1191,10 +1191,10 @@ h5 {
 }
 .section5 .swiper5-container .swiper-slide-active {
   filter: grayscale(10%);
-  margin: 0 5rem;
+  transform: rotate(0) scale(1.05);
 }
 .section5 .swiper5-container .swiper-slide-active:nth-child(2), .section5 .swiper5-container .swiper-slide-active:nth-child(3) {
-  transform: rotate(0) scale(1.35);
+  transform: rotate(0);
   z-index: 2;
 }
 
