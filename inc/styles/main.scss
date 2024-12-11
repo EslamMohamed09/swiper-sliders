@@ -1266,11 +1266,12 @@ h5 {font-size:1.1rem;}
            min-height:100vh;
            overflow:hidden;
 
-       .content {gap:1.5rem;
-                 background:linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0), 100%);
+       .content {width:min(70rem, 100%);
+                 gap:1.5rem;
+                 padding:2rem 0;
+                 background:linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
                  backdrop-filter:blur(30px);
                  border-radius:20px;
-                 width:min(900px, 100%);
                  box-shadow:0 0.5px 0 1px rgba(255,255,255, 0.2) inset, 0 1px 0 0 rgba(255, 255, 255, 0.65) inset, 0 4px 16px rgba(0,0,0,0.1);
                  z-index:10;
               .info {max-width:450px;
@@ -1279,9 +1280,10 @@ h5 {font-size:1.1rem;}
 
                      p {color:var(--white);
                         font-weight:500;
-                        font-size:1rem;
+                        font-size:1.1rem;
                         margin-bottom:1.5rem;
                         line-height:1.5;
+                        letter-spacing:0.5px;
                         .movie-night {background:linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2bb8c5 100%);}
                      }
 
@@ -1312,10 +1314,11 @@ h5 {font-size:1.1rem;}
                      }
               }
 
-              .swiper {width:250px;
-                       height:450px;
-                       padding:50px;
-                     .swiper-slide {box-shadow:0 15px 50px rgba(0,0,0,0.2);
+              .swiper {width:20rem;
+                       height:25rem;
+
+                     .swiper-slide {width:100%;
+                                    box-shadow:0 15px 50px rgba(0,0,0,0.2);
                                     border-radius:10px;
                                     position:relative;
                                    
