@@ -259,3 +259,26 @@ const swiper9 = new Swiper(".section9 .swiper", {
     pauseOnMouseEnter:true,
   }
 });
+
+const swiper10 = new Swiper(".section10 .swiper", {
+  grabCursor:true,
+  initialSlide:true,
+  centeredSlides:true,
+  slidesPerView:"auto",
+  spaceBetween:10,
+  loop:false,
+  speed:1000,
+  freeMode:false,
+  freeMode:false,
+  mousewheel: {
+    thresholdDelta:30
+  },
+  pagination: {
+    el:"swiper-pagination",
+    clickable:true,
+  },
+  autoplay: {
+    delay:2400,
+    pauseOnMouseEnter:true,
+  }
+});
