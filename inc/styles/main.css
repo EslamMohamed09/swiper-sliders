@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   text-decoration: none !important;
   outline: none !important;
   transition: all 0.2s linear;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Nunito", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -1701,20 +1701,20 @@ h5 {
  # section 9
 ***************/
 .section9 {
-  background-image: radial-gradient(circle at 20% 100%, rgb(184, 184, 0.1) 0%, rgb(184, 184, 0.1) 33%, rgba(96, 96, 96, 0.1) 33%, rgba(96, 96, 96, 0.1) 66%, rgba(7, 7, 7, 0.1) 66%, rgba(7, 7, 7, 0.1) 99%), linear-gradient(40deg, #040a22, #162561, #202e64, #677aa6);
+  background-image: radial-gradient(circle at 20% 100%, rgba(7, 7, 7, 0.1) 0%, rgba(96, 96, 96, 0.1) 33%, rgba(7, 7, 7, 0.1) 33%, rgba(96, 96, 96, 0.1) 66%, rgba(7, 7, 7, 0.1) 66%, rgba(7, 7, 7, 0.1) 99%), linear-gradient(40deg, #040a22, #162561, #202e64, #677aa6);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .section9 .section-container {
   display: grid;
-  grid-template-columns: 50% 45;
-  place-items: center;
-  gap: 5rem;
+  grid-template-columns: 60% 40%;
+  place-items: center start;
+  gap: 3rem;
   min-height: 100vh;
   padding: 1.4rem 5rem;
 }
 .section9 .section-container .content {
-  max-width: 60rem;
+  width: 70%;
 }
 .section9 .section-container .content h1 {
   font-family: "Comfortaa", sans-serif;
@@ -1753,7 +1753,7 @@ h5 {
 .section9 .section-container .swiper {
   position: relative;
   width: 400px;
-  height: 490px;
+  height: 450px;
 }
 .section9 .section-container .swiper .swiper-slide {
   position: relative;
@@ -1791,7 +1791,7 @@ h5 {
   bottom: 0;
   width: 100%;
   height: 150px;
-  padding: 10px 20px;
+  padding: 1rem 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1802,8 +1802,10 @@ h5 {
   border-radius: 0 0 20px 20px;
 }
 .section9 .section-container .swiper .swiper-slide .overlay h1 {
-  font-size: clamp(1.2rem, 4vw, 1.5rem);
-  font-weight: 600;
+  font-size: clamp(1.1rem, 4vw, 1.3rem);
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 0.4rem;
 }
 .section9 .section-container .swiper .swiper-slide .overlay p {
   font-size: clamp(0.8rem, 4vw, 0.9rem);
@@ -1820,12 +1822,18 @@ h5 {
   font-weight: 300;
 }
 .section9 .section-container .swiper .swiper-slide .overlay .ratings svg {
-  color: #afe312;
+  color: gold;
 }
 @media (max-width: 1050px) {
   .section9 .section-container .swiper {
     width: 350px;
     height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .section9 .section-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
 }
 @media (max-width: 930px) {

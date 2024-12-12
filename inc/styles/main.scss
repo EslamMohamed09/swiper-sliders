@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {margin:0;padding:0;
    text-transform:capitalize;
    text-decoration:none !important;
    outline:none !important;
    transition:all 0.2s linear;
-   font-family:'Exo 2',sans-serif;
+   font-family: "Nunito", sans-serif;
    scroll-behavior:smooth;}
 
 :root {--gray:#f2f2f7;
@@ -1450,9 +1450,9 @@ h5 {font-size:1.1rem;}
  # section 9
 ***************/
 .section9 {background-image:radial-gradient(circle at 20% 100%, 
-                                      rgba(184,184,0.1) 0%, 
-                                      rgba(184,184,0.1) 33%,
+                                       rgba(7,7,7,0.1) 0%, 
                                        rgba(96,96,96,0.1) 33%,
+                                       rgba(7,7,7,0.1) 33%,
                                        rgba(96,96,96,0.1) 66%,
                                        rgba(7,7,7,0.1) 66%,
                                        rgba(7,7,7,0.1) 99%),
@@ -1461,12 +1461,12 @@ h5 {font-size:1.1rem;}
           background-size:cover;
 
        .section-container {display:grid;
-                           grid-template-columns:50% 45;
-                           place-items:center;
-                           gap:5rem;
+                           grid-template-columns:60% 40%;
+                           place-items:center start;
+                           gap:3rem;
                            min-height:100vh;
                            padding:1.4rem 5rem;
-              .content {max-width:60rem;
+              .content {width:70%;
 
                      h1 {font-family:"Comfortaa", sans-serif;
                          font-size:clamp(2rem, 4vw, 3.5rem);
@@ -1501,7 +1501,7 @@ h5 {font-size:1.1rem;}
 
               .swiper {position:relative;
                        width:400px;
-                       height:490px;
+                       height:450px;
 
                      .swiper-slide {position:relative;
                                     background-position:center;
@@ -1533,7 +1533,7 @@ h5 {font-size:1.1rem;}
                                       bottom:0;
                                       width:100%;
                                       height:150px;
-                                      padding:10px 20px;
+                                      padding:1rem 1.2rem;
                                       display:flex;
                                       flex-direction:column;
                                       justify-content:center;
@@ -1543,8 +1543,10 @@ h5 {font-size:1.1rem;}
                                       color:var(--white);
                                       border-radius:0 0 20px 20px;
 
-                                   h1 {font-size:clamp(1.2rem, 4vw, 1.5rem);
-                                       font-weight:600;}
+                                   h1 {font-size:clamp(1.1rem, 4vw, 1.3rem);
+                                       font-weight:bold;
+                                       color:var(--white);
+                                       margin-bottom:0.4rem;}
 
                                    p {font-size:clamp(0.8rem, 4vw, 0.9rem);
                                       font-weight:300;
@@ -1555,7 +1557,7 @@ h5 {font-size:1.1rem;}
                                              margin-top:12px;
                                           span {font-size:clamp(0.8rem, 4vw, 0.9rem);
                                                 font-weight:300;}
-                                          svg {color:#afe312;}
+                                          svg {color:gold;}
                                    }
                             }
                      }
@@ -1564,6 +1566,11 @@ h5 {font-size:1.1rem;}
               @media(max-width:1050px){
                      .swiper {width:350px;
                               height:450px;}
+              }
+
+              @media(max-width:768px){
+                     grid-template-columns:1fr;
+                     grid-template-rows:auto auto;
               }
        }
 
