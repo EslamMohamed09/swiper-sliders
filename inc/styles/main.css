@@ -1848,4 +1848,25 @@ h5 {
   }
 }
 
+/**************
+ # section 10
+***************/
+.section10 {
+  position: relative;
+}
+.section10 .section-container {
+  height: 100vh;
+  overflow: hidden;
+  background-image: radial-gradient(circle at top left, #950923 10%, #111113 30%);
+}
+.section10 .section-container .slider {
+  width: 100%;
+  padding: 50px 0;
+}
+.section10 .section-container .slider .slide-item {
+  position: relative;
+  width: 200px;
+  height: 500px;
+}
+
 /*# sourceMappingURL=main.css.map */

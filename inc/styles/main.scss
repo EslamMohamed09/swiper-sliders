@@ -1586,3 +1586,21 @@ h5 {font-size:1.1rem;}
               .swiper {grid-area:slider;}
        }
 }
+
+/**************
+ # section 10
+***************/
+.section10 {position:relative;
+       .section-container {height:100vh;
+                           overflow:hidden;
+                           background-image:radial-gradient(circle at top left, #950923 10%, #111113 30%);
+              
+              .slider {width:100%;
+                       padding:50px 0;
+                     .slide-item {position:relative;
+                                  width:200px;
+                                  height:500px;
+                     }
+              }
+       }
+}
