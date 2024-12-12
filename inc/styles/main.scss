@@ -762,17 +762,17 @@ h5 {font-size:1.1rem;}
                                text-align:center;
                                margin:auto;
                                position:relative;
-                            .swiper-slide {width:100%;
-                                           height:100%;
-                                           display:flex;
-                                           justify-content:center;
-                                           align-items:center;
-                                           background:none;
-                                           border:none;
+
+                            .swiper-slide {position:relative;
+                                           background-position:center;
+                                           background-size:cover;
+                                           user-select:none;
+                                           border-radius:1rem;
+                                           
                                    img {width:100%;
+                                        height:100%;
                                         transform-origin:50% bottom;
-                                        border:0.4rem solid var(--navyblue8);
-                                        transform:translateY(20px) scale(1.15);
+                                        border:0.2rem solid rgba(255, 255, 255, 0.3);
                                         transition:transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) 1s;
                                         pointer-events:none;
                                         border-radius:1rem;}
@@ -1466,14 +1466,14 @@ h5 {font-size:1.1rem;}
                            gap:3rem;
                            min-height:100vh;
                            padding:1.4rem 5rem;
-              .content {width:70%;
+              .content {width:75%;
 
                      h1 {font-family:"Comfortaa", sans-serif;
-                         font-size:clamp(2rem, 4vw, 3.5rem);
-                         font-weight:700;
+                         font-size:clamp(1.8rem, 4vw, 3.5rem);
+                         font-weight:500;
                          line-height:1.2;
                          letter-spacing:1px;
-                         margin-bottom:3rem;
+                         margin-bottom:2rem;
                          color:var(--white2);}
 
                      p {font-size:clamp(1rem, 4vw, 1.1rem);
@@ -1509,6 +1509,7 @@ h5 {font-size:1.1rem;}
                                     border:1px solid rgba(255, 255, 255, 0.3);
                                     user-select:none;
                                     border-radius:20px;
+
                             img {width:100%;
                                  height:100%;
                                  border-radius:1.5rem;}

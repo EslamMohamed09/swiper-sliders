@@ -50,10 +50,10 @@ var swiper2 = new Swiper(".section2 .swiper2-container", {
     },
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const swiper3 = new Swiper('.swiper3', {
+  const swiper3 = new Swiper('.section3 .swiper3', {
     effect:'cube',
     grabCursor:true,
+    speed:1000,
     cubeEffect:{
       shadow:false,
       slideShadows:false,
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl:'.swiper-button-next',
     },
   });
-});
+
 
 const swiper4 = new Swiper(".swiper4-container", {
   initialSlide:3,
