@@ -1929,6 +1929,11 @@ h5 {
 .section10 .section-container .swiper .swiper-pagination-bullet-active {
   width: 2rem;
   border-radius: 0.9rem;
+  background-color: #6f1223;
 }
+
+/**************
+ # section 11
+***************/
 
 /*# sourceMappingURL=main.css.map */
