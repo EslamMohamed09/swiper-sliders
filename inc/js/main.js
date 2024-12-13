@@ -283,3 +283,13 @@ const swiper10 = new Swiper(".section10 .swiper", {
     pauseOnMouseEnter:true,
   }
 });
+
+const swiper11 = new Swiper(".section11 .swiper", {
+  effect:"slide",
+  speed:900,
+  loop:true,
+  navigation: {
+    prevEl:".prev-btn",
+    nextEl:".next-btn",
+  },
+});
