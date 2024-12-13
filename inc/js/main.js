@@ -264,6 +264,7 @@ const swiper10 = new Swiper(".section10 .swiper", {
   grabCursor:true,
   initialSlide:true,
   centeredSlides:true,
+  centeredSlides:true,
   slidesPerView:"auto",
   spaceBetween:10,
   loop:false,
@@ -274,7 +275,7 @@ const swiper10 = new Swiper(".section10 .swiper", {
     thresholdDelta:30
   },
   pagination: {
-    el:"swiper-pagination",
+    el:".swiper-pagination",
     clickable:true,
   },
   autoplay: {

@@ -588,17 +588,20 @@ h5 {font-size:1.1rem;}
                            padding:5rem 0;
                            margin:auto;
                            background-color:var(--aqua7);
+
               .swiper-slide {position:relative;
                              width:15rem;
                              aspect-ratio:3/4;
                              border-radius:1rem;
                              border:1px solid var(--gray5);
+
                      img {display:block;
                           width:100%;
                           height:100%;
                           border-radius:inherit;
                           user-select:none;
                           object-fit:cover;}
+
                      h5 {width:max-content;
                          text-align:center;
                          font-weight:normal;
@@ -1598,12 +1601,13 @@ h5 {font-size:1.1rem;}
               .swiper {width:100%;
                        padding:50px 0;
                      .swiper-slide {position:relative;
-                                  width:200px;
-                                  height:500px;
-                                  border-radius:1rem;
-                                  overflow:hidden;
-                                  transition:1s;
-                                  user-select:none;
+                                    width:20rem;
+                                    height:35rem;
+                                    margin:0 1rem;
+                                    border-radius:1rem;
+                                    overflow:hidden;
+                                    transition:1s;
+                                    user-select:none;
 
                             &::after {content:"";
                                       position:absolute;
@@ -1613,6 +1617,7 @@ h5 {font-size:1.1rem;}
                                       background:linear-gradient(120deg, rgba(130,13,13,0.8), rgba(39, 8, 92, 0.8));
                                       mix-blend-mode:multiply;
                                       z-index:1;}
+
                             img {width:100%;
                                  height:500px;
                                  object-fit:cover;
@@ -1626,14 +1631,14 @@ h5 {font-size:1.1rem;}
                                font-weight:600;
                                font-style:italic;
                                letter-spacing:2px;
-                               z-index:2;
                                transform:rotate(360deg) scale(0);
                                transition:0.8s;
-                               opacity:0;}
+                               opacity:0;
+                               z-index:2;}
                      }
 
                      .swiper-slide-active {position:relative;
-                                           width:400px;
+                                           width:31rem;
                                            transition:1s;
 
                             &::after {background:rgba(123, 123, 123, 0.4);}
@@ -1643,7 +1648,6 @@ h5 {font-size:1.1rem;}
 
                             p {transform:rotate(0deg);
                                opacity:1;}
-
                      }
 
                      .swiper-pagination-bullet {width:1.1rem;
@@ -1652,6 +1656,8 @@ h5 {font-size:1.1rem;}
                                                 border-radius:50%;
                                                 transition:all 0.3s ease-in-out;}
 
+                     .swiper-pagination-bullet-active {width:2rem;
+                                                       border-radius:0.9rem;}
               }
        }
 }

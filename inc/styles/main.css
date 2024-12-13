@@ -1865,8 +1865,9 @@ h5 {
 }
 .section10 .section-container .swiper .swiper-slide {
   position: relative;
-  width: 200px;
-  height: 500px;
+  width: 20rem;
+  height: 35rem;
+  margin: 0 1rem;
   border-radius: 1rem;
   overflow: hidden;
   transition: 1s;
@@ -1897,14 +1898,14 @@ h5 {
   font-weight: 600;
   font-style: italic;
   letter-spacing: 2px;
-  z-index: 2;
   transform: rotate(360deg) scale(0);
   transition: 0.8s;
   opacity: 0;
+  z-index: 2;
 }
 .section10 .section-container .swiper .swiper-slide-active {
   position: relative;
-  width: 400px;
+  width: 31rem;
   transition: 1s;
 }
 .section10 .section-container .swiper .swiper-slide-active::after {
@@ -1924,6 +1925,10 @@ h5 {
   background-color: var(--white);
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+}
+.section10 .section-container .swiper .swiper-pagination-bullet-active {
+  width: 2rem;
+  border-radius: 0.9rem;
 }
 
 /*# sourceMappingURL=main.css.map */
