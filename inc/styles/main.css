@@ -68,6 +68,7 @@
   --transparent-orange:#fdad0113;
   --transparent-orange2:#fdad011c;
   --transparent-orange3:#fdad0125;
+  --brown10:rgb(219, 144, 3);
   --brown11:rgb(185, 121, 0);
   --brown12:rgb(151, 99, 1);
   --red:#ffdada;
@@ -2082,24 +2083,27 @@ h5 {
   transform: scale(1);
   z-index: 3;
 }
-.section11 .section-container .swiper .nav-carousel .prev-button,
-.section11 .section-container .swiper .nav-carousel .next-button {
+.section11 .section-container .swiper .nav-carousel .prev-btn,
+.section11 .section-container .swiper .nav-carousel .next-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 3rem;
+  height: 2.5rem;
   border: 0;
-  border-radius: 14px;
+  border-radius: 0.3rem;
   padding: 0.6rem;
   transition: transform 0.3s ease-in;
+  background-color: var(--brown10);
   cursor: pointer;
 }
-.section11 .section-container .swiper .nav-carousel .prev-button:hover,
-.section11 .section-container .swiper .nav-carousel .next-button:hover {
+.section11 .section-container .swiper .nav-carousel .prev-btn:hover,
+.section11 .section-container .swiper .nav-carousel .next-btn:hover {
   transform: scale(1.05);
 }
 .section11 .section-container .swiper .nav-carousel svg {
-  font-size: clamp(2.1rem, 3vw, 1.5rem);
+  font-size: clamp(1.7rem, 3vw, 1.5rem);
   color: #f7ebff;
 }
 @media (max-width: 1200px) {
