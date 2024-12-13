@@ -68,9 +68,14 @@
   --transparent-orange:#fdad0113;
   --transparent-orange2:#fdad011c;
   --transparent-orange3:#fdad0125;
-  --brown10:rgb(219, 144, 3);
-  --brown11:rgb(185, 121, 0);
-  --brown12:rgb(151, 99, 1);
+  --brown5:#DEB887;
+  --brown6:#dbaf76;
+  --brown7:#f6af61;
+  --brown9:rgb(219, 144, 3);
+  --brown10:rgb(185, 121, 0);
+  --brown11:rgb(151, 99, 1);
+  --brown12:#8B4513;
+  --brown13:#74360b;
   --red:#ffdada;
   --red2:#f8baba;
   --red3:#f59b9b;
@@ -1936,12 +1941,14 @@ h5 {
 /**************
  # section 11
 ***************/
-.section11 .section-container {
-  font-size: 1rem;
-  color: var(--black2);
+.section11 {
   min-height: 100vh;
   background-image: linear-gradient(120deg, rgb(7, 7, 9) 16%, rgb(27, 24, 113) 96%);
   background-repeat: no-repeat;
+}
+.section11 .section-container {
+  font-size: 1rem;
+  color: var(--black2);
 }
 .section11 .section-container .swiper {
   width: 100%;
@@ -1951,17 +1958,17 @@ h5 {
   position: relative;
   display: grid;
   grid-template-columns: 45% 50%;
-  place-items: center;
-  gap: 40px;
+  place-items: center start;
+  gap: 3rem;
   overflow: hidden;
-  padding: 130px 60px;
+  padding: 5rem 3rem;
 }
 .section11 .section-container .swiper .swiper-slide .content {
-  padding: 0 50px;
+  width: 80%;
 }
 .section11 .section-container .swiper .swiper-slide .content h1 {
   font-size: clamp(2.3rem, 5vw, 4rem);
-  color: #f6af61;
+  color: var(--brown7);
   line-height: 1.3;
   margin-bottom: 30px;
   pointer-events: none;
@@ -1990,16 +1997,18 @@ h5 {
   border: 0;
   font-size: 1rem;
   font-weight: 400;
-  color: #f4f0ff;
   text-align: center;
+  text-transform: capitalize;
   backdrop-filter: blur(10px);
   cursor: pointer;
   transform: translateY(-30px);
   opacity: 0;
   transition-duration: 0.8s;
   transition-delay: 1.6s;
+  color: #f4f0ff;
+  background: linear-gradient(to top, var(--brown13), var(--brown7));
 }
-.section11 .section-container .swiper .swiper-slide .content button:before {
+.section11 .section-container .swiper .swiper-slide .content button::before {
   content: "";
   display: block;
   position: absolute;
@@ -2050,6 +2059,7 @@ h5 {
   max-width: 200px;
   aspect-ratio: 4/3;
   border-radius: 6px;
+  opacity: 0;
   pointer-events: none;
 }
 .section11 .section-container .swiper .swiper-slide-active .content h1,
@@ -2076,17 +2086,13 @@ h5 {
   }
 }
 .section11 .section-container .swiper .nav-carousel {
-  position: absolute;
-  bottom: 2.5rem;
-  right: 3rem;
-  gap: 16px;
-  transform: scale(1);
+  width: 7rem;
+  margin-left: auto;
   z-index: 3;
 }
 .section11 .section-container .swiper .nav-carousel .prev-btn,
 .section11 .section-container .swiper .nav-carousel .next-btn {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 3rem;
@@ -2095,7 +2101,7 @@ h5 {
   border-radius: 0.3rem;
   padding: 0.6rem;
   transition: transform 0.3s ease-in;
-  background-color: var(--brown10);
+  background: radial-gradient(var(--brown6), var(--brown12));
   cursor: pointer;
 }
 .section11 .section-container .swiper .nav-carousel .prev-btn:hover,
