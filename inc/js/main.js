@@ -279,7 +279,7 @@ const swiper10 = new Swiper(".section10 .swiper", {
     clickable:true,
   },
   autoplay: {
-    delay:2400,
+    delay:2600,
     pauseOnMouseEnter:true,
   }
 });
