@@ -1908,3 +1908,103 @@ h5 {font-size:1.1rem;}
 /**************
  # section 12
 ***************/
+.section12 {min-height:100vh;
+            background:#262626;
+            overflow:hidden;
+       .section-heading {
+              h1 {font-family:'Ephesis', cursive;
+                  font-size:clamp(5rem, 4vw, 6rem);
+                  font-weight:500;
+                  color:#eee;
+                  user-select:none;}
+       }
+
+       .section-container {width:80%;
+              .swiper {width:100%;
+                       height:100%;
+                     .swiper-slide {max-width:300px;
+                                    height:380px;
+                                    border-radius:15px;
+                                    margin:20px 0 40px;
+                                    overflow:hidden;
+                                    box-shadow:0 8px 10px rgba(0,0,0,0.5), inset 0 2px 2px rgba(255, 255, 255, 0.2);
+                                    cursor:grab;
+                            .content {position:relative;
+                                      display:grid;
+                                      grid-auto-flow:dense;
+                                      grid-template-rows:2fr 1fr 3fr 1fr;
+                                      gap:0.9rem;
+                                      height:100%;
+                                      padding:16px;
+                                      background:rgba(104, 104, 104, 0.5);
+                                      color:var(--white2);
+                                      user-select:none;
+                                   &::before,
+                                   &::after {content:"";
+                                             position:absolute;
+                                             inset:0;
+                                             z-index:-1;
+                                             border-radius:inherit;
+                                             background:linear-gradient(180deg, rgb(30,119,95), rgb(55, 141, 167), rgb(93, 59, 174), rgb(165, 59, 157));
+                                   }
+
+                                   img {width:100%;
+                                        pointer-events:none;
+                                        user-select:none;
+                                        aspect-ratio:3/2;
+                                        border-radius:0.8rem;
+                                        object-fit:cover;
+                                        box-shadow:0 3px 6px rgba(0,0,0,0.3);}
+                                   
+                                   h2 {font-size:1.2rem;
+                                       text-align:center;
+                                       margin-top:10px;}
+
+                                   p {font-size:1rem;
+                                      font-weight:400;}
+
+                                   button {display:flex;
+                                           justify-content:center;
+                                           align-items:center;
+                                           background-color:#ece9e6;
+                                           color:var(--black2);
+                                           font-size:1rem;
+                                           font-weight:400;
+                                           outline:0;
+                                           border:0;
+                                           border-radius:5px;
+                                           padding:10px 16px;
+                                           margin-bottom:5px;
+                                           box-shadow:0 0 5px #eee;
+                                           cursor:pointer;
+                                           transition:all 0.3s ease;
+                                          &:is(:hover, :focus-visible){transform:scale(0.97);}
+                                   }
+
+                                   .arrows {list-style:none;
+                                            width:100%;
+
+                                          li {position:relative;
+                                              background:linear-gradient(to bottom, #99559b, #3b3d8a);
+                                              box-shadow:0 4px 6px rgba(0,0,0,0.4), inset 0 4px 4px rgba(255, 255, 255, 0.2);
+                                              padding:16px;
+                                              border-radius:50%;
+                                              cursor:pointer;
+                                              transform:scale(1);
+                                              &:before {position:absolute;
+                                                        content:"";
+                                                        top:0;
+                                                        right:0;
+                                                        bottom:0;
+                                                        left:0;
+                                                        background:linear-gradient(to right, #99559b, #3b3d8a);}
+                                              &:hover::before {opacity:1;}
+                                              .svg {font-size:1.5rem;
+                                                    color:var(--white2);}
+                                          }
+                                   }
+                            }
+                     }
+              }
+       }
+}
