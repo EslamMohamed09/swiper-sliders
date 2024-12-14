@@ -50,42 +50,42 @@ var swiper2 = new Swiper(".section2 .swiper2-container", {
     },
 });
 
-  const swiper3 = new Swiper('.section3 .swiper3', {
-    effect:'cube',
-    grabCursor:true,
-    speed:1000,
-    cubeEffect:{
-      shadow:false,
-      slideShadows:false,
-      shadowOffset:0,
-      shadowScale:0.8,
-      perspective:1000,
-      modifier:1,
-    },
-    loop:true,
-    autoplay:{
-      delay:4000,
-      disableOnInteraction:false,
-    },
-    pagination:{
-      el:'.swiper-pagination',
-      clickable:true,
-    },
-    navigation:{
-      prevEl:'.swiper-button-prev',
-      nextEl:'.swiper-button-next',
-    },
-  });
+const swiper3 = new Swiper('.section3 .swiper3', {
+  effect:'cube',
+  grabCursor:true,
+  speed:1000,
+  cubeEffect:{
+    shadow:false,
+    slideShadows:false,
+    shadowOffset:0,
+    shadowScale:0.8,
+    perspective:1000,
+    modifier:1,
+  },
+  loop:true,
+  autoplay:{
+    delay:4000,
+    disableOnInteraction:false,
+  },
+  pagination:{
+    el:'.swiper-pagination',
+    clickable:true,
+  },
+  navigation:{
+    prevEl:'.swiper-button-prev',
+    nextEl:'.swiper-button-next',
+  },
+});
 
 
 const swiper4 = new Swiper(".swiper4-container", {
+  effect:"coverflow",
   initialSlide:3,
   centeredSlides:true,
   loop:true,
   speed:900,
   grabCursor:true,
   allowTochMove:false,
-  effect:"coverflow",
   coverflowEffect:{
     rotate:-10,
     stretch:-45,
@@ -107,6 +107,10 @@ const swiper4 = new Swiper(".swiper4-container", {
     },
     600:{slidesPerView:3},
     1200:{slidesPerView:5,},
+  },
+  autoplay:{
+    delay:2000,
+    pauseOnMouseEnter:true,
   },
 });
 

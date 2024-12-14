@@ -1961,7 +1961,7 @@ h5 {
   place-items: center start;
   gap: 3rem;
   overflow: hidden;
-  padding: 5rem 3rem;
+  padding: 5rem 0;
 }
 .section11 .section-container .swiper .swiper-slide .content {
   width: 80%;
@@ -2056,7 +2056,6 @@ h5 {
   gap: 0.3rem;
 }
 .section11 .section-container .swiper .swiper-slide .image-container img {
-  max-width: 200px;
   aspect-ratio: 4/3;
   border-radius: 6px;
   opacity: 0;
@@ -2199,5 +2198,9 @@ h5 {
     max-width: 110px;
   }
 }
+
+/**************
+ # section 12
+***************/
 
 /*# sourceMappingURL=main.css.map */
