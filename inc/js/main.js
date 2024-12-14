@@ -298,3 +298,29 @@ const swiper11 = new Swiper(".section11 .swiper", {
   },
 });
 
+const swiper12 = new Swiper(".section12 .swiper", {
+  slidesPerView:1,
+  spaceBetween:10,
+  speed:400,
+  preventClicks:true,
+  noSwiping:true,
+  freeMode:false,
+  breakpoints:{
+   550: {
+    slidesPerView:2,
+    spaceBetween:20,
+   },
+   950: {
+    slidesPerView:3,
+    spaceBetween:30,
+   },
+   1200: {
+    slidesPerView:4,
+    spaceBetween:30,
+   },
+  },
+  navigation:{
+    prevEl:".section12 .arrows .prev-btn",
+    nextEl:".section12 .arrows .next-btn",
+  }
+});
