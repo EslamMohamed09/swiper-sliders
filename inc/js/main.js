@@ -306,7 +306,11 @@ const swiper12 = new Swiper(".section12 .swiper", {
   noSwiping:true,
   freeMode:false,
   breakpoints:{
-   550: {
+   10: {
+    slidesPerView:1,
+    spaceBetween:20,
+   },
+   400: {
     slidesPerView:2,
     spaceBetween:20,
    },
