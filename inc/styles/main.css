@@ -2216,10 +2216,12 @@ h5 {
 }
 .section12 .section-container {
   width: 80%;
+  background: red;
 }
 .section12 .section-container .swiper {
   width: 100%;
   height: 100%;
+  background: blue;
 }
 .section12 .section-container .swiper .swiper-slide {
   max-width: 300px;
@@ -2288,11 +2290,11 @@ h5 {
 .section12 .section-container .swiper .swiper-slide .content button:is(:hover, :focus-visible) {
   transform: scale(0.97);
 }
-.section12 .section-container .swiper .swiper-slide .content .arrows {
+.section12 .section-container .swiper .arrows {
   list-style: none;
   width: 100%;
 }
-.section12 .section-container .swiper .swiper-slide .content .arrows li {
+.section12 .section-container .swiper .arrows li {
   position: relative;
   background: linear-gradient(to bottom, #99559b, #3b3d8a);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), inset 0 4px 4px rgba(255, 255, 255, 0.2);
@@ -2301,7 +2303,7 @@ h5 {
   cursor: pointer;
   transform: scale(1);
 }
-.section12 .section-container .swiper .swiper-slide .content .arrows li:before {
+.section12 .section-container .swiper .arrows li:before {
   position: absolute;
   content: "";
   top: 0;
@@ -2310,10 +2312,10 @@ h5 {
   left: 0;
   background: linear-gradient(to right, #99559b, #3b3d8a);
 }
-.section12 .section-container .swiper .swiper-slide .content .arrows li:hover::before {
+.section12 .section-container .swiper .arrows li:hover::before {
   opacity: 1;
 }
-.section12 .section-container .swiper .swiper-slide .content .arrows li .svg {
+.section12 .section-container .swiper .arrows li .svg {
   font-size: 1.5rem;
   color: var(--white2);
 }
