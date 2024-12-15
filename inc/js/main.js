@@ -372,3 +372,20 @@ favbtnsSection14.forEach((favbtn)=>{
     favbtn.classList.toggle("pulse");
   });
 });
+
+const swiper15 = new Swiper(".section15 .swiper", {
+  grabCursor:true,
+  initialSlide:4,
+  centeredSlides:true,
+  slidesPerView:"auto",
+  spaceBetween:14,
+  freeMode:false,
+  autoplay:{
+    delay:5000,
+  },
+  on:{
+    click(event){
+      swiper1.slideTo(this.clickedIndex);
+    },
+  },
+});
