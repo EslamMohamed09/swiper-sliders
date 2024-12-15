@@ -322,6 +322,10 @@ const swiper12 = new Swiper(".section12 .swiper", {
     slidesPerView:4,
     spaceBetween:30,
    },
+   1400: {
+    slidesPerView:5,
+    spaceBetween:30,
+   },
   },
   navigation:{
     prevEl:".section12 .arrows .prev-btn",
