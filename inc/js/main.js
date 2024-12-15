@@ -338,10 +338,4 @@ const swiper13 = new Swiper(".section13 .swiper", {
   grabCursor:true,
   speed:500,
   loop:true,
-  // mousewheel:{
-  //   invert:false,
-  //   sensitivity:1,
-  // }
 });
-
-swiper13.enable();

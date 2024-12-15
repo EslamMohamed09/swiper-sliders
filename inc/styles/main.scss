@@ -2066,3 +2066,25 @@ h5 {font-size:1.1rem;}
               }
        }
 }
+
+/**************
+ # section 14
+***************/
+.section14 {
+       .section-container{
+              .swiper {width:100%;
+                       height:100%;
+
+                     .swiper-slide {position:relative;
+                                    width:300px;
+                                    aspect-ratio:3/4;
+                                    border-radius:12px;
+                                    box-shadow:0 4px 8px rgba(0,0,0,0.4);
+                                    cursor:grab;
+                                    user-select:none;
+                                    overflow:hidden;
+                                    
+                     }
+              }
+       }
+}
