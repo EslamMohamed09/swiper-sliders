@@ -339,3 +339,10 @@ const swiper13 = new Swiper(".section13 .swiper", {
   speed:500,
   loop:true,
 });
+
+const containerSection14 = document.querySelector('.section14 .section-container');
+const favSection14 = document.querySelector('.section14 .fav');
+
+const swiper14 = new Swiper(".section14 .swiper", {
+  
+});

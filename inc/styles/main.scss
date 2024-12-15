@@ -2083,8 +2083,51 @@ h5 {font-size:1.1rem;}
                                     cursor:grab;
                                     user-select:none;
                                     overflow:hidden;
-                                    
+                            img {object-fit:cover;
+                                 pointer-events:none;}
+
+                            .caption {position:absolute;
+                                      left:0;
+                                      bottom:0;
+                                      width:100%;
+                                      height:70px;
+                                      padding:10px 20px;
+                                      display:flex;
+                                      justify-content:space-between;
+                                      align-items:center;
+                                      transform:translateY(70px);
+                                      color:#e2e2e2;
+                                      background:rgba(0,0,0,0.7);
+                                      transition:all 1s ease;}
+
+                            &:hover .caption {transform:translateY(0);}
+
+                            h3 {font-size:1.2rem;
+                                color:var(--white);}
+
+                            svg {color:var(--white);
+                                 font-size:1.5rem;
+                                 opacity:0.65;
+                                 cursor:pointer;
+                                 transition:all 0.3s ease;
+
+                                 &:hover {opacity:1;}
+
+                                 .active {color:var(--red10);
+                                          opacity:1;}
+
+                                 .pulse {animation:pulse 0.8s 1 ease-in-out;}
+
+                                 @keyframes pulse {
+                                   0%, 
+                                   100% {transform:scale(1);}
+
+                                   50% {transform:scale(1.5);}
+                                 }
+                            }
                      }
+
+                     .swiper-wrapper {transition-timing-function:linear !important;}
               }
        }
 }

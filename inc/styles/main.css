@@ -2392,5 +2392,59 @@ h5 {
   user-select: none;
   overflow: hidden;
 }
+.section14 .section-container .swiper .swiper-slide img {
+  object-fit: cover;
+  pointer-events: none;
+}
+.section14 .section-container .swiper .swiper-slide .caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(70px);
+  color: #e2e2e2;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 1s ease;
+}
+.section14 .section-container .swiper .swiper-slide:hover .caption {
+  transform: translateY(0);
+}
+.section14 .section-container .swiper .swiper-slide h3 {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+.section14 .section-container .swiper .swiper-slide svg {
+  color: var(--white);
+  font-size: 1.5rem;
+  opacity: 0.65;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.section14 .section-container .swiper .swiper-slide svg:hover {
+  opacity: 1;
+}
+.section14 .section-container .swiper .swiper-slide svg .active {
+  color: var(--red10);
+  opacity: 1;
+}
+.section14 .section-container .swiper .swiper-slide svg .pulse {
+  animation: pulse 0.8s 1 ease-in-out;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+.section14 .section-container .swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 
 /*# sourceMappingURL=main.css.map */
