@@ -2394,6 +2394,8 @@ h5 {
 }
 .section14 .section-container .swiper .swiper-slide img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
 }
 .section14 .section-container .swiper .swiper-slide .caption {
@@ -2428,11 +2430,11 @@ h5 {
 .section14 .section-container .swiper .swiper-slide svg:hover {
   opacity: 1;
 }
-.section14 .section-container .swiper .swiper-slide svg .active {
+.section14 .section-container .swiper .swiper-slide svg.active {
   color: var(--red10);
   opacity: 1;
 }
-.section14 .section-container .swiper .swiper-slide svg .pulse {
+.section14 .section-container .swiper .swiper-slide svg.pulse {
   animation: pulse 0.8s 1 ease-in-out;
 }
 @keyframes pulse {

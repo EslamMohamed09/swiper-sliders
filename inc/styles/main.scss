@@ -2083,7 +2083,10 @@ h5 {font-size:1.1rem;}
                                     cursor:grab;
                                     user-select:none;
                                     overflow:hidden;
+
                             img {object-fit:cover;
+                                 width:100%;
+                                 height:100%;
                                  pointer-events:none;}
 
                             .caption {position:absolute;
@@ -2113,17 +2116,18 @@ h5 {font-size:1.1rem;}
 
                                  &:hover {opacity:1;}
 
-                                 .active {color:var(--red10);
-                                          opacity:1;}
+                            }
 
-                                 .pulse {animation:pulse 0.8s 1 ease-in-out;}
+                            svg.active {color:var(--red10);
+                                        opacity:1;}
 
-                                 @keyframes pulse {
+                            svg.pulse {animation:pulse 0.8s 1 ease-in-out;}
+
+                            @keyframes pulse {
                                    0%, 
                                    100% {transform:scale(1);}
 
                                    50% {transform:scale(1.5);}
-                                 }
                             }
                      }
 

@@ -340,9 +340,35 @@ const swiper13 = new Swiper(".section13 .swiper", {
   loop:true,
 });
 
-const containerSection14 = document.querySelector('.section14 .section-container');
-const favSection14 = document.querySelector('.section14 .fav');
+const swiperSection14 = document.querySelector('.section14 .swiper');
+const favbtnsSection14 = document.querySelectorAll('.section14 .fav');
 
 const swiper14 = new Swiper(".section14 .swiper", {
-  
+  spaceBetween:30,
+  slidesPerView:"auto",
+  loop:true,
+  speed:6000,
+  freeMode:true,
+  // allowTouchMove:false,
+  autoplay:{
+    delay:0,
+  }
+});
+
+swiperSection14.addEventListener("mouseenter", function(){
+  const swiperTranslate = swiper14.getTranslate();
+  swiper14.setTranslate(swiperTranslate);
+  swiper14.autoplay.stop();
+});
+
+swiperSection14.addEventListener("mouseleave", function(){
+  swiper14.slideTo(swiper14.activeIndex, 3000, false);
+  swiper14.autoplay.start();
+});
+
+favbtnsSection14.forEach((favbtn)=>{
+  favbtn.addEventListener("click", () => {
+    favbtn.classList.toggle("active");
+    favbtn.classList.toggle("pulse");
+  });
 });
