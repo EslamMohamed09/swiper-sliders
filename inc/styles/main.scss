@@ -2007,3 +2007,64 @@ h5 {font-size:1.1rem;}
               }
        }
 }
+
+/**************
+ # section 13
+***************/
+.section13 {position:relative;
+            display:flex;
+            justify-content:center;
+            width:100%;
+            height:100%;
+       .hero {position:absolute;
+              bottom:0;
+              max-width:550px;
+              filter:contrast(90%);
+              pointer-events:none;
+              z-index:5;}
+
+       .swiper {width:100%;
+                height:100%;
+
+              .swiper-slide {position:relative;
+                             text-align:center;
+                             font-size:1.25rem;
+                             background-color:var(--white);
+                             display:flex;
+                             justify-content:center;
+                             align-items:center;
+
+                     .title {position:absolute;
+                             top:18%;
+                             left:50%;
+                             -ms-transform:translate(-50%, -50%);
+                             font-size:5rem;
+                             letter-spacing:0.3rem;
+                             z-index:5;
+                             color:transparent;
+                             background-position:0 0;
+                             animation:animated-text 20s linear infinite;
+                             background-clip:text;
+                             -webkit-background-clip:text;}
+
+                     @keyframes animated-text {
+                            100% {background-position:200% 0;}
+                     }
+
+                     .title1, 
+                     .title5 {-webkit-text-stroke:1px rgba(16, 104, 31, 0.8);
+                              background:url("../images/green.jpg");}
+
+                     .title2,
+                     .title3,
+                     .title4,
+                     .title6 {-webkit-text-stroke:1px var(--white);
+                              background:url("../images/white.jpg");}
+
+                     img {width:100%;
+                          height:100%;
+                          object-fit:cover;
+                          z-index:1;}
+              }
+       }
+}
