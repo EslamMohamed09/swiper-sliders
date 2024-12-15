@@ -332,3 +332,16 @@ const swiper12 = new Swiper(".section12 .swiper", {
     nextEl:".section12 .arrows .next-btn",
   }
 });
+
+const swiper13 = new Swipe(".section13 .swiper", {
+  grabCursor:true,
+  speed:500,
+  effect:"slide",
+  loop:true,
+  mousewheel:{
+    invert:false,
+    sensitivity:1,
+  }
+});
+
+swiper13.enable();
