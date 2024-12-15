@@ -333,15 +333,15 @@ const swiper12 = new Swiper(".section12 .swiper", {
   }
 });
 
-const swiper13 = new Swipe(".section13 .swiper", {
+const swiper13 = new Swiper(".section13 .swiper", {
+  effect:"slide",
   grabCursor:true,
   speed:500,
-  effect:"slide",
   loop:true,
-  mousewheel:{
-    invert:false,
-    sensitivity:1,
-  }
+  // mousewheel:{
+  //   invert:false,
+  //   sensitivity:1,
+  // }
 });
 
 swiper13.enable();
