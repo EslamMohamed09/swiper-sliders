@@ -395,7 +395,7 @@ const swiper16 = new Swiper(".section16 .swiper", {
   grabCursor:true,
   centeredSlides:true,
   speed:900,
-  spaceBetween:600,
+  spaceBetween:300,
   slidesPerView:"auto",
   coverflowEffect:{
     rotate:0,
@@ -404,13 +404,13 @@ const swiper16 = new Swiper(".section16 .swiper", {
     modifier:1,
     slidesShadows:false,
   },
-  pagination: {
-    el:".swiper-pagination",
-    clickable:true,
-  },
   mousewheel:{
     invert:false,
     thresholdDelta:50,
     sensitivity:1,
+  },
+  pagination: {
+    el:".swiper-pagination",
+    clickable:true,
   }
 });
