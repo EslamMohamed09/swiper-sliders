@@ -2614,7 +2614,7 @@ h5 {
   border-radius: 40% 50% 30% 40%;
   opacity: 0.7;
 }
-.section16 .section-container .blob-container .blob .one {
+.section16 .section-container .blob-container .blob.blob-one {
   width: 400px;
   aspect-ratio: 1/1;
   left: 20%;
@@ -2622,7 +2622,7 @@ h5 {
   animation: transform 10s ease-in-out infinite both alternate, movement_one 16s ease-in-out infinite both;
   background: linear-gradient(90deg, #faccff, #5a78a9);
 }
-.section16 .section-container .blob-container .blob .two {
+.section16 .section-container .blob-container .blob.blob-two {
   width: 300px;
   top: 15%;
   left: 20%;
