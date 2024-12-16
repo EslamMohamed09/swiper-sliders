@@ -2225,7 +2225,43 @@ h5 {font-size:1.1rem;}
                           border-radius:150px;
                           padding:14px;
                           background-color:rgba(250, 204, 255, 0.18);}
+
+                     h1 {font-family:"Dancing Script", cursive;
+                         font-size:3rem;
+                         width:max-content;
+                         color:rgb(212, 211, 211);}
+
+                     p {font-family:"Quicksand", sans-serif;
+                        font-size:400;
+                        font-style:italic;
+                        line-height:1.3;
+                        color:rgba(252, 249, 249, 0.75);
+                        background:rgba(121, 119, 119, 0.2);
+                        border-radius:10px;
+                        border:1px solid rgba(121, 119, 119, 0.5);
+                        box-shadow:0 4px 30px rgba(0,0,0,0.1);
+                        backdrop-filter:blur(15px);
+                        padding:10px;
+                        transform:translate(130px, -20px);
+                        transition-delay:0.4s;}
               }
+
+              .swiper-slide-active {
+                     h1,
+                     p {opacity:1;}
+
+                     p {transform:translate(130px, -70px);}
+              }
+
+              .swiper-pagination-bullet {width:14px;
+                                         height:14px;
+                                         background-color:#fff;
+                                         border-radius:50%;
+                                         transition:all 0.7s ease-in-out;}
+
+              .swiper-pagination-bullet-active {width:28px;
+                                                border-radius:14px;
+                                                background-color:rgba(250, 204, 255, 0.6);}
 
        }
                        
