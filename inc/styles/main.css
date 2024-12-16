@@ -2464,8 +2464,8 @@ h5 {
 .section15 .section-container .swiper .swiper-slide {
   position: relative;
   bottom: -100px;
-  width: 260px;
-  height: 300px;
+  width: 21rem;
+  height: 25rem;
   border-radius: 12px;
   overflow: hidden;
   user-select: none;
@@ -2501,12 +2501,12 @@ h5 {
   z-index: -1;
 }
 .section15 .section-container .swiper .swiper-slide-active {
-  position: relative;
-  bottom: -50px;
-  width: 300px;
-  height: 400px;
+  width: 25rem;
+  height: 31rem;
   padding: 20px 20px 24px;
+  bottom: -50px;
   box-shadow: 0 2px 10px 6px rgba(232, 230, 231, 0.5);
+  position: relative;
 }
 .section15 .section-container .swiper .swiper-slide-active::after {
   background: linear-gradient(115deg, rgb(255, 255, 255), rgb(228, 228, 228));
