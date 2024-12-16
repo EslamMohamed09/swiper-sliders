@@ -2663,4 +2663,136 @@ h5 {
   }
 }
 
+/**************
+ # section 17
+***************/
+.section17 {
+  min-height: 100vh;
+  background-image: radial-gradient(circle at bottom center, #d8acc8, #af9eca, #7cccf7);
+  background-repeat: no-repeat;
+}
+.section17 .card {
+  width: 500px;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+.section17 .card .swiper.slide {
+  position: relative;
+  height: 128px;
+  cursor: grab;
+}
+.section17 .card .swiper.slide img {
+  position: absolute;
+  inset: 0;
+  width: 160px;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+.section17 .card .swiper.slide .arrows .prev-btn,
+.section17 .card .swiper.slide .arrows .next-btn {
+  position: absolute;
+  top: 10%;
+  width: 40px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.2);
+  --swiper-navigation-size:30px;
+  --swiper-navigation-color:rgb(255, 255, 255);
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.section17 .card .swiper.slide .arrows .prev-btn:hover,
+.section17 .card .swiper.slide .arrows .next-btn:hover {
+  opacity: 1;
+}
+.section17 .card .swiper.slide .arrows .prev-btn {
+  left: 0;
+}
+.section17 .card .swiper.slide .arrows .right-btn {
+  right: 0;
+}
+.section17 .card .user {
+  height: 160px;
+  background-color: rgb(255, 255, 255);
+}
+.section17 .card .user .user-info {
+  color: #52515d;
+}
+.section17 .card .user img {
+  width: 120px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgb(255, 255, 255);
+}
+.section17 .card .user h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0 6px;
+}
+.section17 .card .user p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.section17 .card .user button {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #52515d;
+  padding: 10px 14px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.section17 .card .user .star {
+  background: transparent;
+}
+.section17 .card .user .star svg {
+  color: #6b7280;
+  font-size: 1.5rem;
+  transition: transform 0.2s linear;
+}
+.section17 .card .user .star svg.active {
+  color: #e8e526;
+  animation: bounding 0.5s 1 ease-in-out forwards;
+}
+@keyframes bounding {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(-2px);
+  }
+}
+.section17 .card .user .follow-btn {
+  background: #e0d6f8;
+  transform: scale(1);
+  transition: all 0.4s linear;
+}
+.section17 .card .user .follow-btn.active {
+  background: var(--white);
+  border: 2px solid #6b7280;
+}
+.section17 .card .user .follow-btn:is(:hover, :focus-visible) {
+  transform: scale(0.96);
+}
+.section17 .card .content {
+  color: #6b7280;
+  padding: 0 20px;
+  margin-bottom: 16px;
+}
+.section17 .card .content .text {
+  font-weight: 500;
+  line-height: 3.6;
+  margin-top: 30px;
+  padding: 0 40px;
+  opacity: 0.7;
+}
+.section17 .card .content .text .line {
+  width: 60%;
+  height: 1px;
+  background-color: #6b7280;
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */

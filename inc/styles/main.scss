@@ -2324,3 +2324,122 @@ h5 {font-size:1.1rem;}
               }
        }
 }
+
+/**************
+ # section 17
+***************/
+.section17 {min-height:100vh;
+            background-image:radial-gradient(circle at bottom center, #d8acc8, #af9eca, #7cccf7);
+            background-repeat:no-repeat;
+
+              .card {width:500px;
+                     border-radius:16px;
+                     background-color:var(--white);
+
+                     .swiper.slide {position:relative;
+                                    height:128px;
+                                    cursor:grab;
+
+                            img {position:absolute;
+                                 inset:0;
+                                 width:160px;
+                                 height:100%;
+                                 object-fit:cover;
+                                 user-select:none;}
+
+                            .arrows {
+                                   .prev-btn,
+                                   .next-btn {position:absolute;
+                                              top:10%;
+                                              width:40px;
+                                              height:130px;
+                                              background-color:rgba(0,0,0,0.2);
+                                              --swiper-navigation-size:30px;
+                                              --swiper-navigation-color:rgb(255, 255, 255);
+                                              transition:all 0.5s linear;
+                                              opacity:0;
+
+                                          &:hover {opacity:1;}
+                                   }
+
+                                   .prev-btn {left:0;}
+
+                                   .right-btn {right:0;}
+                            }
+                     }
+
+                     .user {height:160px;
+                            background-color:rgb(255,255,255);
+
+                            .user-info {color:#52515d;}
+
+                            img {width:120px;
+                                 aspect-ratio:1/1;
+                                 border-radius:50%;
+                                 object-fit:cover;
+                                 border:5px solid rgb(255, 255, 255);}
+
+                            h1 {font-size:1.5rem;
+                                font-weight:600;
+                                margin:10px 0 6px;}
+
+                            p {font-size:1.1rem;
+                               font-weight:400;}
+
+                            button {font-size:1rem;
+                                    font-weight:600;
+                                    color:#52515d;
+                                    padding:10px 14px;
+                                    border:0;
+                                    outline:0;
+                                    border-radius:5px;
+                                    cursor:pointer;}
+
+                            .star {background:transparent;
+                                   svg {color:#6b7280;
+                                        font-size:1.5rem;
+                                        transition:transform 0.2s linear;
+                                        &.active {color:#e8e526;
+                                                  animation:bounding 0.5s 1 ease-in-out forwards;}
+                                   }
+                            }
+
+                            @keyframes bounding {
+                                   0%, 100% {transform:scale(1) translateY(0);}
+
+                                   50% {transform:scale(1.1) translateY(-2px);}
+                            }
+
+                            .follow-btn {background:#e0d6f8;
+                                         transform:scale(1);
+                                         transition:all 0.4s linear;
+
+                                   &.active {background:var(--white);
+                                             border:2px solid #6b7280;}
+
+                                   &:is(:hover, :focus-visible) {transform:scale(0.96);}
+                            }
+                     }
+
+                     .content {color:#6b7280;
+                               padding:0 20px;
+                               margin-bottom:16px;
+
+                            .text {font-weight:500;
+                                   line-height:3.6;
+                                   margin-top:30px;
+                                   padding:0 40px;
+                                   opacity:0.7;
+
+                                   .line {width:60%;
+                                          height:1px;
+                                          background-color:#6b7280;
+                                          margin-top:30px;
+                                   }
+                            }
+
+                            
+                     }
+              }
+
+}

@@ -414,3 +414,14 @@ const swiper16 = new Swiper(".section16 .swiper", {
     clickable:true,
   }
 });
+
+const swiper17 = new Swiper(".section17 .swiper", {
+  slidesPerView:3,
+  spaceBetween:10,
+  loop:true,
+  speed:500,
+  navigation: {
+    prevEl:".section17 .arrows .prev-btn",
+    nextEl:".section17 .arrows .next-btn",
+  },
+});
