@@ -389,3 +389,28 @@ const swiper15 = new Swiper(".section15 .swiper", {
     },
   },
 });
+
+const swiper16 = new Swiper(".section16 .swiper", {
+  effect:"coverflow",
+  grabCursor:true,
+  centeredSlides:true,
+  speed:900,
+  spaceBetween:600,
+  slidesPerView:"auto",
+  coverflowEffect:{
+    rotate:0,
+    stretch:0,
+    depth:200,
+    modifier:1,
+    slidesShadows:false,
+  },
+  pagination: {
+    el:".swiper-pagination",
+    clickable:true,
+  },
+  mousewheel:{
+    invert:false,
+    thresholdDelta:50,
+    sensitivity:1,
+  }
+});
