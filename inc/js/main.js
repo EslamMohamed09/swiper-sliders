@@ -425,3 +425,38 @@ const swiper17 = new Swiper(".section17 .swiper", {
     nextEl:".section17 .arrows .next-btn",
   },
 });
+
+const starBtnSec17 = document.querySelector(".section17 .user .star svg");
+const followBtnSec17 = documentBtn = document.querySelector(".section17 .user .follow-btn");
+
+starBtnSec17.addEventListener("click", () => {
+  if(starBtnSec17.classList.contains("active")){
+     starBtnSec17.classList.remove("active");
+     starBtnSec17.classList.remove("fa-solid");
+     starBtnSec17.classList.add("fa-regular");
+  } else {
+    starBtnSec17.classList.add("active");
+    starBtnSec17.classList.add("fa-solid");
+    starBtnSec17.classList.remove("fa-regular");
+  }
+});
+
+followBtnSec17.addEventListener("click", () => {
+  if(followBtnSec17.classList.contains("active")){
+     followBtnSec17.classList.remove("active");
+  } else {
+    followBtnSec17.classList.add("active");
+  }
+});
+
+
+
+async function addingconfetti(){
+  const jsConfetti = new JSConfetti();
+  await jsConfetti.addConfetti({
+     confettiColors: ["#6f3fbc", "#59e10b", "#d3e10b", "#e10b6f", "#fff"],
+     confettiRadius:4,
+     confetiNumber:400,
+  });
+}
+
