@@ -416,8 +416,7 @@ const swiper16 = new Swiper(".section16 .swiper", {
 });
 
 const swiper17 = new Swiper(".section17 .swiper", {
-  slidesPerView:3,
-  spaceBetween:10,
+  slidesPerView:4,
   loop:true,
   speed:500,
   navigation: {
@@ -426,26 +425,24 @@ const swiper17 = new Swiper(".section17 .swiper", {
   },
 });
 
-const starBtnSec17 = document.querySelector(".section17 .user .star svg");
+const starBtnSec17 = document.querySelector(".section17 .user .star");
 const followBtnSec17 = documentBtn = document.querySelector(".section17 .user .follow-btn");
 
 starBtnSec17.addEventListener("click", () => {
   if(starBtnSec17.classList.contains("active")){
      starBtnSec17.classList.remove("active");
-     starBtnSec17.classList.remove("fa-solid");
-     starBtnSec17.classList.add("fa-regular");
   } else {
     starBtnSec17.classList.add("active");
-    starBtnSec17.classList.add("fa-solid");
-    starBtnSec17.classList.remove("fa-regular");
   }
 });
 
 followBtnSec17.addEventListener("click", () => {
   if(followBtnSec17.classList.contains("active")){
      followBtnSec17.classList.remove("active");
+     followBtnSec17.textContent = 'follow';
   } else {
     followBtnSec17.classList.add("active");
+    followBtnSec17.textContent = 'following';
   }
 });
 

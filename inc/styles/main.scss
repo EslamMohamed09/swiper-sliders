@@ -2341,14 +2341,18 @@ h5 {font-size:1.1rem;}
                               border-radius:16px 16px 0 0;
                               position:relative;
 
+                             .swiper-wrapper {gap:0;}
+
                             .swiper-slide {position:relative;
                                            height:128px;
                                            cursor:grab;
+                                           padding:0;
+                                           margin:0;
 
-                                   img {position:absolute;
-                                        inset:0;
-                                        width:160px;
+                                   img {width:11rem;
                                         height:100%;
+                                        inset:0;
+                                        margin:0;
                                         object-fit:cover;
                                         user-select:none;}
                             }
@@ -2365,27 +2369,33 @@ h5 {font-size:1.1rem;}
                                      opacity:0;
 
                                    .prev-btn,
-                                   .next-btn {
-                                              
-                                              color:var(--white);
+                                   .next-btn {color:var(--white);
                                               font-size:2.3rem;
                                               --swiper-navigation-size:30px;
                                               --swiper-navigation-color:rgb(255, 255, 255);
                                               cursor:pointer;
-                                              transition:all 0.5s linear;}
+                                              transition:all 0.5s linear;
+                                          svg {text-shadow:var(--text-shadow2);}
+                                   }
                             }
                      }
 
-                     .user {height:160px;
+                     .user {height:12rem;
+                            padding:0 5%;
                             background-color:rgb(255,255,255);
+
+                            > div {flex:1 1 20rem;}
+
+                            .star-button-block {text-align:left;}
 
                             .user-info {color:#52515d;}
 
                             img {width:120px;
                                  aspect-ratio:1/1;
                                  border-radius:50%;
-                                 object-fit:cover;
-                                 border:5px solid rgb(255, 255, 255);}
+                                 object-fit:fill;
+                                 border:5px solid rgb(255, 255, 255);
+                                 z-index:3;}
 
                             h1 {font-size:1.5rem;
                                 font-weight:600;
@@ -2406,10 +2416,10 @@ h5 {font-size:1.1rem;}
                             .star {background:transparent;
                                    svg {color:#6b7280;
                                         font-size:1.5rem;
-                                        transition:transform 0.2s linear;
-                                        &.active {color:#e8e526;
-                                                  animation:bounding 0.5s 1 ease-in-out forwards;}
-                                   }
+                                        transition:transform 0.2s linear;}
+
+                                   &.active svg {color:#e8e526;
+                                                 animation:bounding 0.5s 1 ease-in-out forwards;}
                             }
 
                             @keyframes bounding {
@@ -2418,14 +2428,17 @@ h5 {font-size:1.1rem;}
                                    50% {transform:scale(1.1) translateY(-2px);}
                             }
 
-                            .follow-btn {background:#e0d6f8;
-                                         transform:scale(1);
-                                         transition:all 0.4s linear;
+                            .follow-btn-block {text-align:right;
+                                   .follow-btn {background:#e0d6f8;
+                                                border:2px solid #e0d6f8;
+                                                transform:scale(1);
+                                                transition:all 0.4s linear;
 
-                                   &.active {background:var(--white);
-                                             border:2px solid #6b7280;}
+                                          &.active {background:var(--white);
+                                                 border:2px solid #6b7280;}
 
-                                   &:is(:hover, :focus-visible) {transform:scale(0.96);}
+                                          &:is(:hover, :focus-visible) {transform:scale(0.96);}
+                                   }
                             }
                      }
 
@@ -2434,7 +2447,7 @@ h5 {font-size:1.1rem;}
                                margin-bottom:16px;
 
                             .text {font-weight:500;
-                                   line-height:3.6;
+                                   text-align:center;
                                    margin-top:30px;
                                    padding:0 40px;
                                    opacity:0.7;
@@ -2445,10 +2458,10 @@ h5 {font-size:1.1rem;}
                                           margin-top:30px;}
                             }
 
-                            .item-container {display:flex;
-                                             align-items:center;
-                                             column-gap:60px;
-                                             margin:40px 0 30px;
+                            .item-container {gap:5rem;
+                                             margin:3rem 0 2rem;
+
+                                          > div {text-align:center;}
 
                                           h2 {font-size:1.8rem;
                                               font-weight:500;}
