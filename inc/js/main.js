@@ -443,9 +443,9 @@ followBtnSec17.addEventListener("click", () => {
   } else {
     followBtnSec17.classList.add("active");
     followBtnSec17.textContent = 'following';
+    addingconfetti();
   }
 });
-
 
 
 async function addingconfetti(){
@@ -453,7 +453,7 @@ async function addingconfetti(){
   await jsConfetti.addConfetti({
      confettiColors: ["#6f3fbc", "#59e10b", "#d3e10b", "#e10b6f", "#fff"],
      confettiRadius:4,
-     confetiNumber:400,
+     confettiNumber:400,
   });
 }
 
