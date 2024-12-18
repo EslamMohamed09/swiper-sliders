@@ -161,27 +161,11 @@ const swiper5 = new Swiper(".swiper5-container", {
     sensitivity:0.8,
     releaseOnEdges:true,
   },
+  autoplay:{
+    delay:3000,
+    pauseOnMouseEnter:true,
+  },
 });
-
-setTimeout(() => {
-  const swiper5 = new Swiper(".swiper5-container", {
-    grabCursor:true,
-    initialSlide:4,
-    centeredSlides:true,
-    slidesPerView:"auto",
-    spaceBetween:0,
-    slideToClickedSlide:true,
-    mousewheel:{
-      invert:false,
-      thresholdDelta:50,
-      sensitivity:0.8,
-    },
-    autoplay:{
-      delay:2000,
-      pauseOnMouseEnter:true,
-    },
-  });
-}, 100);
 
 
 const textSliderBlock = new Swiper(".section6 .text-block", {
@@ -190,10 +174,10 @@ const textSliderBlock = new Swiper(".section6 .text-block", {
   speed:1000,
   longSwipesRatio:0.01,
   grabCursor:true,
-  mousewheel:{
-    releaseOnEdges:true,
-    forceToAxis:true,
-  },
+  // mousewheel:{
+  //   releaseOnEdges:true,
+  //   forceToAxis:true,
+  // },
   navigation:{
     prevEl:".swiper-button-prev",
     nextEl:".swiper-button-next",
